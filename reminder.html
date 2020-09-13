@@ -14,8 +14,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Own js and css file-->
-    <link rel="stylesheet" href="webpagereminder.css" media="screen">
-    <script src="webpageReminder.js"></script>
+    <link rel="stylesheet" href="reminder.css" media="screen">
+    <script src="reminder.js"></script>
     <!--font awesome library-->
     <script src="https://kit.fontawesome.com/0fca39a2fa.js" crossorigin="anonymous"></script>
 </head>
@@ -79,12 +79,15 @@
             </ul>
     </nav>
     <div class="main-container">
-        <form action="/action_page.php">
+        <form action="">
         <label for="reminder">Type Here:</label>
-        <textarea id="reminder" name="reminder" rows="4" cols="50">
-           Type your reminder here...
+		<br>
+        <textarea id="reminder" name="reminder" rows="8" cols="50">
         </textarea>
-        <br></br>
+        <br>
+		<input id="email" type="email" name="email" value="xxx@gmail.com">
+		<input id="phone" type="tel" name="phone" value="9123 4567" pattern="[0-9]{8}">
+		<br><br>
         <input type ="submit" values="Submit">
         </form>
     </div>
@@ -93,5 +96,5 @@
 
 </html>
 
-
+<!--https://html.form.guide/email-form/html-email-form/-->
 <!--https://www.rapidtables.com/tools/notepad.html-->
